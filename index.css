@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    padding: 20px 40px;
+    color: white;
+    z-index: 10;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+.hero{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hero::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: rgb(0, 0, 0, 0.5); */
+    text-align: center;
+}
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    z-index: 10;
+    width: 80%;
+    max-width: 700px;
+    
+   
+   
+}
+.hero-text p{
+    text-align: justify;
+    margin-top: 15px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h2{
+    text-align: center;
+    justify-content: center;
+    color: chocolate;
+}
+p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about{
+    padding: 80px 40px;
+}
+
+   
+
+@media(max-width:768px){
+    nav{
+        padding: 15px 20px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+        /* background: rgba(0, 0, 0, 0.5); */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+}
+nav a:hover{
+    color: #ffd700;
+    transition: color o.3s;
+}
+nav a:active{
+    color: #ffd700;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+footer:hover{
+    color: rgb(20, 20, 19);
+ 
+  
+
+}
+footer{
+     background: chocolate;
+     color: aliceblue;
+}
+h1{
+    text-align: center;
+    color:white;
+    text-align: justify;
+}
+
+
+
